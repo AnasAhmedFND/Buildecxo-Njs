@@ -20,10 +20,11 @@ const Footer = () => {
         </div>
 
         <div className="flex gap-4">
-          <p className='text-2xl '><IoLogoFacebook /></p>
-          <p className='text-2xl '><RiYoutubeFill /></p>
-          <p className='text-2xl '><FaLinkedinIn /></p>
-          <p className='text-2xl '><IoLogoSkype /></p>
+         
+          <a className='text-2xl ' href="https://www.facebook.com/"><IoLogoFacebook /></a>
+          <a className='text-2xl ' href="https://www.youtube.com/"><RiYoutubeFill /></a>
+          <a className='text-2xl ' href="https://www.linkedin.com/"><FaLinkedinIn /></a>
+          <a className='text-2xl ' href="https://www.skype.com/"><IoLogoSkype /></a>
 
         </div>
 
@@ -33,7 +34,7 @@ const Footer = () => {
             <p>Newsletter</p>
           </div>
 
-          <div className="flex items-center    px-2 rounded-full w-[300px] bg-[#200B3A] ">
+          <div className="flex items-center px-2 rounded-full w-[300px] bg-[#200B3A] ">
             <input className=' outline-none py-2 ' type="text" placeholder='Your email' />
             <button className='px-7 py-2 rounded-r-full bg-[#54357D] '>Submit</button>
           </div>
