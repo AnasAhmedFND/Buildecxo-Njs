@@ -1,3 +1,4 @@
+import Beku from "@/Components/hero_/Beku";
 import Build from "@/Components/hero_/Build";
 import Experience from "@/Components/hero_/Experience";
 import Hero from "@/Components/hero_/Hero";
@@ -11,6 +12,7 @@ export default function Home() {
     <Hero  page={"About"} />
     <Experience />
     <Build />
+    <Beku />
    
     
     </>
