@@ -5,8 +5,9 @@ const Beku = () => {
     return (
         <section className='container mx-auto py-4  relative'>
             <img className='w-full h-[400px]  ' src="/home/ft-2.jpg" alt="beku" />
+
             <div className="flex gap-40 border w-full absolute top-5 justify-end items-end ">
-                <div className="flex gap-5 border px-4 w-[30%] h-[80px] bg-black rounded-full py-2 relative  ">
+                <div className="flex gap-8 border px-4 w-[30%] h-[80px] bg-black rounded-full py-2 relative  ">
                     <img className='w-[60px] h-[60px] border rounded-full ' src="/home/electri-man.jpg" alt="" />
                     <div className="font-bold text-white ">
                         <p className='text-red-800  text-[12px] '>CALL TITle</p>
