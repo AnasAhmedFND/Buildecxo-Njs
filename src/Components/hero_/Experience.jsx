@@ -5,18 +5,18 @@ import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 
 const Experience = () => {
     return (
-        <section className='container mx-auto pt-16'>
-            <div className="absolute bottom-5  container mx-auto flex justify-center ">
-                <img className='h-[250px] ' src="/home/Section.png" alt="" />
+        <section className='container mx-auto pt-16 md:px-0 px-2'>
+            <div className="absolute md:bottom-5 bottom-[130px]  container mx-auto flex justify-center ">
+                <img className='md:h-[250px] h-[150px] ' src="/home/Section.png" alt="" />
             </div>
             
-            <div className="flex">
-                <div className="w-1/2 ">                    
-                    <img className='w-full h-[400px] ' src="/home/exp.jpg" alt="experience" />
+            <div className="md:flex">
+                <div className="md:w-1/2 ">                    
+                    <img className='w-full h-[450px] ' src="/home/exp.jpg" alt="experience" />
 
                 </div>
-                <div className="w-1/2  ">
-                    <p className='text-[14px] mt-[80px]'>Bring to the table win-win survival strategies to ensure proactive <br />domination. At the end of the day, going forward, a new normal that has <br />
+                <div className="md:w-1/2  ">
+                    <p className='md:text-[14px] text-[12px] md:mt-[80px]'>Bring to the table win-win survival strategies to ensure proactive <br />domination. At the end of the day, going forward, a new normal that has <br />
                         evolved from generation X is on the runway heading towards a <br />streamlined cloud solution.</p>
 
                     <div className="flex flex-wrap mt-5 ">

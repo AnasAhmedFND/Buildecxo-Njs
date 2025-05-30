@@ -12,7 +12,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-    <Hero  page={"About"} />
+    <Hero  page={"Home"} />
     <Experience />
     <Build />
     <Beku />
