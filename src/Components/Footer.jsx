@@ -8,10 +8,10 @@ import { IoLogoSkype } from "react-icons/io5";
 
 const Footer = () => {
   return (
-    <section className='border pt-20 pb-10 bg-[#140626] '>
+    <section className='border md:pt-20 pt-10 pb-10 bg-[#140626] md:px-0 px-2 '>
 
-      <div className="flex items-center justify-between border-b-2 container mx-auto text-white py-4 ">
-        <div className="flex items-center gap-2">
+      <div className="md:flex items-center justify-between border-b border-[#807380a0] container mx-auto text-white py-4  ">
+        <div className="flex items-center md:gap-2 gap-4">
           <p className='w-[30px] h-[30px] border rounded-full flex justify-center items-center text-xl text-red-500 bg-white '><IoIosCall /> </p>
           <div className="">
             <p className='text-red-500'>Give us a call</p>
@@ -19,7 +19,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex gap-4">
+        <div className="flex md:gap-4 gap-6 mt-5 ">
          
           <a className='text-2xl ' href="https://www.facebook.com/"><IoLogoFacebook /></a>
           <a className='text-2xl ' href="https://www.youtube.com/"><RiYoutubeFill /></a>
@@ -28,13 +28,13 @@ const Footer = () => {
 
         </div>
 
-        <div className="flex gap-4 items-center ">
+        <div className="md:flex gap-4 items-center mt-5 ">
           <div className="font-bold ">
             <p>Join</p>
             <p>Newsletter</p>
           </div>
 
-          <div className="flex items-center px-2 rounded-full w-[300px] bg-[#200B3A] ">
+          <div className="flex items-center px-2 rounded-full w-[300px] bg-[#200B3A] md:mt-0 mt-2 ">
             <input className=' outline-none py-2 ' type="text" placeholder='Your email' />
             <button className='px-7 py-2 rounded-r-full bg-[#54357D] '>Submit</button>
           </div>
@@ -43,7 +43,7 @@ const Footer = () => {
 
       </div>
 
-      <div className="container mx-auto flex items-center justify-between py-5 text-white mt-8 ">
+      <div className="container mx-auto md:flex items-center justify-between py-5 text-white mt-8 ">
         <div className="">
           <img className='bg-white px-2 rounded-md' src="/Group.png" alt="Group" />
           <p className='mt-2'>Improve efficiency, provide a better Customer <br />experience with modern Technolo services <br />
@@ -52,7 +52,7 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col gap-5">
-          <h5 className='border-b font-bold '>Resources</h5>
+          <h5 className='underline font-bold md:mt-0 mt-2'>Resources</h5>
           <p>About</p>
           <p>Career</p>
           <p>Contact</p>
@@ -61,7 +61,7 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col gap-5">
-          <h5 className='border-b font-bold '>Company</h5>
+          <h5 className='underline font-bold md:mt-0 mt-2'>Company</h5>
           <p>Home</p>
           <p>Contact</p>
           <p>Portfolio</p>
@@ -69,13 +69,18 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col gap-5">
-          <h5 className='border-b font-bold '>Help Page</h5>
+          <h5 className='underline font-bold md:mt-0 mt-2'>Help Page</h5>
           <p>About</p>
           <p>Career</p>
           <p>Contact</p>
           <p>FAQ</p>
 
         </div>
+
+      </div>
+
+      <div className="border-t border-[#807380a0] mt-5 container mx-auto py-5 flex justify-center">
+        <p className='w-[258px] text-white   text-[12px] '>© Copyright 2023 All rights reserved.</p>
 
       </div>
     </section>
