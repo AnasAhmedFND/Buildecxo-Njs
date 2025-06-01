@@ -9,8 +9,8 @@ const Hero = (props) => {
       </div>
 
       <div className="text-center relative bottom-[200px] ">
-        <p className='font-bold text-4xl  '>{props.page}</p>
-        <p className='flex justify-center items-center text-green-500 text-xl font-bold md:mt-2 '> <span className='mr-2'>Home</span> <MdKeyboardDoubleArrowRight className='text-red-500' /> <span className='ml-2 text-white'>{props.page} </span> </p> 
+        <p className='font-bold text-4xl  '>{props.page_title}</p>
+        <p className='flex justify-center items-center text-green-500 text-xl font-bold md:mt-2 '> <span className='mr-2'>{props.page_title} </span> <MdKeyboardDoubleArrowRight className='text-red-500' /> <span className='ml-2 text-white'>{props.page} </span> </p> 
       </div>
     </section>
   )
