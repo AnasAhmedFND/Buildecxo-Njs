@@ -3,7 +3,7 @@ import { FaArrowRight } from "react-icons/fa6";
 
 const Great_building = () => {
   return (
-    <section className='container mx-auto py-5  '>
+    <section id='build_about' className='container mx-auto py-5  '>
         <p className='text-center text-red-500'>Great Experience in building</p>
         <div className="flex justify-between mt-10">
             <div className="w-[30%] border border-dashed border-black rounded-b-[50px] py-2 text-center shadow-xl shadow-[#c6adcd] ">

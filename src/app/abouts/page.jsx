@@ -8,7 +8,7 @@ import React from 'react'
 const page = () => {
   return (
     <>
-       <Hero page_title={"About"} page={'Blog'} />
+       <Hero page_title={"About"} page={'Portfolio'} />
        <Contractors />
        <About_servics />
        <Great_building />

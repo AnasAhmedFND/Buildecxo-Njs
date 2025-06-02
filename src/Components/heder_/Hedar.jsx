@@ -50,7 +50,7 @@ const Hedar = () => {
             <li  onClick={hendeleMenu} > <Link href={'/'} >Home </Link> </li>
             <li  onClick={hendeleMenu} className='md:mt-0 mt-4'> <Link href={'/abouts'} >About </Link> </li>
             <li  onClick={hendeleMenu} className='md:mt-0 mt-4'> <Link href={'/abouts'} >Services </Link> </li>
-            <li  onClick={hendeleMenu} className='md:mt-0 mt-4'> <Link href={'/abouts'} >Blog </Link> </li>
+            <li  onClick={hendeleMenu} className='md:mt-0 mt-4'> <Link href={'/portfolio'} >Portfolio </Link> </li>
             <li  onClick={hendeleMenu} className='md:mt-0 mt-4'> <Link href={'/abouts'} >Shop </Link> </li>
             <li  onClick={hendeleMenu} className='md:mt-0 mt-4'> <Link href={'/contact'} >Contact </Link> </li>
           </ul>

@@ -18,9 +18,9 @@ const Beku = () => {
 
                 <div className="">
                     <img className='w-[200px] ' src="/home/ft1.png" alt="" />
-                    <p className='text-white'>For over 80 years, We have been the <br />trusted name in heating, air conditioning <br />
+                    <p className='text-white pb-4'>For over 80 years, We have been the <br />trusted name in heating, air conditioning <br />
                         and plumbing businesses.</p>
-                        <button className='font-bold border bg-[#ff6600] text-white px-5 py-4 rounded-md mt-5 '>MORE EXPLORE</button>
+                        <a href='#factory' className='font-bold border bg-[#ff6600] text-white px-5 py-4 rounded-md mt-5 '>MORE EXPLORE</a>
 
 
                 </div>

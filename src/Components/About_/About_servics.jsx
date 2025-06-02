@@ -2,6 +2,7 @@ import React from 'react'
 import { IoIosArrowDropright } from "react-icons/io";
 
 const About_servics = () => {
+
   return (
    <section className='container mx-auto py-5  flex justify-between'>
     <div className=" w-[48%] relative h-[600px] ">
@@ -28,9 +29,16 @@ const About_servics = () => {
      <p className='flex items-center gap-4 mt-2'><IoIosArrowDropright className='text-red-500' />   Certified & Awards winner</p>
      <p className='flex items-center gap-4 mt-2'><IoIosArrowDropright className='text-red-500' />  Work with energetic team</p>
      <p className='flex items-center gap-4 mt-2'><IoIosArrowDropright className='text-red-500' />  Just Because You Work Hard You’ll Be Successful.</p>
-     <p className='flex items-center gap-4 mt-2'><IoIosArrowDropright className='text-red-500' />  For all your construction needs!</p>
+     <p className='flex items-center gap-4 mt-2 pb-8'><IoIosArrowDropright className='text-red-500' />  For all your construction needs!</p>
+    
+      
+       {/* Scroll Button */}
+       
+       <a className='font-bold text-white bg-[#ff6600] px-5 py-2 rounded-md' href="#build_about" >
 
-     <button className='font-bold text-white bg-[#ff6600] px-5 py-2 mt-5 rounded-md '>More Explore</button>
+       More Explore
+       </a>
+       
 
 
 
