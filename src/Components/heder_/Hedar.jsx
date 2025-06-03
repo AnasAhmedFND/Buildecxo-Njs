@@ -39,8 +39,8 @@ const Hedar = () => {
       </div>
       <div className={` md:flex items-center md:rounded-full  md:w-[80%] w-full  md:ml-[10%]  text-white  z-20 md:mt-8 absolute md:h-auto h-screen md:bg-none bg-[#ff6600] mt-9 ${menu ? "md:static absolute  -left-[360px]  "  : "top-0 left-0  "} `}>
         
-        <div className="bg-[#FF6600] pr-5 rounded-l-xl ">
-          <img className=' w-[250px] h-[60px] md:rounded-br-4xl  pr-4 md:rounded-l-full ' src="/Group-m.png" alt="netur"  />
+        <div className="bg-[#FF6600] pr-5 rounded-l-full  h-[56px] ">
+          <img className=' w-[250px] h-[56px] md:rounded-br-4xl  pr-4 md:rounded-l-full ' src="/Group-m.png" alt="netur"  />
           
 
         </div>

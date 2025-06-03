@@ -2,7 +2,7 @@ import React from 'react'
 
 const Portfolio = () => {
   return (
-   <section className='container mx-auto]'>
+   <section className='container mx-auto '>
     <div className="">
         <div className="flex">
             <div className="">
