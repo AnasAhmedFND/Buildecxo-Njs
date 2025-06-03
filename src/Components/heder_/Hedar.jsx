@@ -49,8 +49,8 @@ const Hedar = () => {
           <ul className='md:flex justify-center items-center  font-bold md:gap-7 gap-14  py-4  '>
             <li  onClick={hendeleMenu} > <Link href={'/'} >Home </Link> </li>
             <li  onClick={hendeleMenu} className='md:mt-0 mt-4'> <Link href={'/abouts'} >About </Link> </li>
-            <li  onClick={hendeleMenu} className='md:mt-0 mt-4'> <Link href={'/abouts'} >Services </Link> </li>
             <li  onClick={hendeleMenu} className='md:mt-0 mt-4'> <Link href={'/portfolio'} >Portfolio </Link> </li>
+            <li  onClick={hendeleMenu} className='md:mt-0 mt-4'> <Link href={'/abouts'} >Services </Link> </li>
             <li  onClick={hendeleMenu} className='md:mt-0 mt-4'> <Link href={'/abouts'} >Shop </Link> </li>
             <li  onClick={hendeleMenu} className='md:mt-0 mt-4'> <Link href={'/contact'} >Contact </Link> </li>
           </ul>
