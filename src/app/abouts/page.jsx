@@ -3,12 +3,13 @@ import About_team from '@/Components/About_/About_team'
 import Contractors from '@/Components/About_/Contractors'
 import Great_building from '@/Components/About_/Great_building'
 import Hero from '@/Components/hero_/Hero'
+import Link from 'next/link'
 import React from 'react'
 
 const page = () => {
   return (
     <>
-       <Hero page_title={"About"} page={'Portfolio'} />
+       <Hero page_title={"About"} page={ <Link href={"portfolio"}>Portfolio </Link>} />
        <Contractors />
        <About_servics />
        <Great_building />

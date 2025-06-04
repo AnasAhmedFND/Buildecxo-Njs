@@ -5,14 +5,13 @@ import Factory from "@/Components/hero_/Factory";
 import Hero from "@/Components/hero_/Hero";
 import Servics from "@/Components/hero_/Servics";
 import Team from "@/Components/hero_/Team";
-import Image from "next/image";
-
+import Link from "next/link";
 
 
 export default function Home() {
   return (
     <>
-    <Hero page_title={"Home"} page={"About"}  />
+    <Hero page_title={"Home"}  page={<Link href={"abouts"} > About </Link> }  />
     <Experience />
     <Build />
     <Beku />

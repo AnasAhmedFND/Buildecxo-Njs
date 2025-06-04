@@ -1,6 +1,59 @@
-import React from 'react'
+'use client';
+import React, { useState } from 'react'
+
+const portfolios = {
+    "All" : [
+        "/portfolio/pr1.png",
+        "/portfolio/pr2.png",
+        "/portfolio/pr3.png",
+        "/portfolio/pr4.png",
+        "/portfolio/pr5.png",
+        "/portfolio/pr6.png"       
+    ],
+
+    "Business" : [
+        "/portfolio/pr4.png",
+        "/portfolio/pr3.png",
+        "/portfolio/pr2.png",
+        "/portfolio/pr1.png"
+    ],
+    
+    "TECHNOLOGY" : [
+        "portfolio/t1.jpg",
+        "portfolio/t2.jpg", 
+        "portfolio/t3.jpg" 
+    ],
+
+    "UI/UX DESIGN" : [
+        "portfolio/u1.jpeg",
+        "portfolio/u2.jpeg",
+        "portfolio/u3.jpeg"
+    ],
+
+    "WEB DESIGN" : [
+        "portfolio/w1.jpeg",
+        "portfolio/w2.jpeg",
+        "portfolio/w3.jpeg",
+
+    ], 
+
+    "DEVELOPMENT" : [
+        "portfolio/dv1.jpeg",
+        "portfolio/dv2.jpeg",
+        "portfolio/dv3.jpeg"
+
+    ]
+    
+
+    
+}
 
 const Portfolio = () => {
+
+    const [activePort, setActivePort] = useState('All');
+
+
+
   return (
    <section className='container mx-auto py-10'>
     <div className="">
@@ -19,12 +72,18 @@ const Portfolio = () => {
 
         
             <ul className='flex gap-8 font-bold mt-6'>
-              <li className=' bg-[#E0DDE5] px-4 py-2 rounded-full hover:text-white cursor-pointer '>SEE ALL</li>
-              <li className=' bg-[#E0DDE5] px-4 py-2 rounded-full hover:text-white cursor-pointer '>BUSINESS</li>
-              <li className=' bg-[#E0DDE5] px-4 py-2 rounded-full hover:text-white cursor-pointer '>TECHNOLOGY</li>
-              <li className=' bg-[#E0DDE5] px-4 py-2 rounded-full hover:text-white cursor-pointer '>UI/UX DESIGN</li>
-              <li className=' bg-[#E0DDE5] px-4 py-2 rounded-full hover:text-white cursor-pointer '>WEB DESIGN</li>
-              <li className=' bg-[#E0DDE5] px-4 py-2 rounded-full hover:text-white cursor-pointer '>DEVELOPMENT</li>
+                {Object.keys(portfolios).map((portfolio) => (
+                    <li key={portfolio} className={`  px-4 py-2 rounded-full hover:text-white hover:bg-[#ff6600] cursor-pointer ${activePort === portfolio ? 'bg-[#ff6600] text-white ' : 'bg-[#E0DDE5] ' } `}
+
+                    onClick={() =>setActivePort(portfolio) }
+                    >
+                        {portfolio}
+                    
+                    </li>
+
+                )) }
+
+             
             </ul>        
 
     </div>
@@ -32,13 +91,12 @@ const Portfolio = () => {
 
 
     <div className="mt-8 flex flex-wrap gap-8 ">
-        <img className='w-[319.5px] h-[321px] ' src="/portfolio/pr1.png" alt="tem" />
-        <img className='w-[319.5px] h-[321px] ' src="/portfolio/pr2.png" alt="tem" />
-        <img className='w-[319.5px] h-[321px] ' src="/portfolio/pr3.png" alt="tem" />
-        <img className='w-[319.5px] h-[321px] ' src="/portfolio/pr4.png" alt="tem" />
-        <img className='w-[319.5px] h-[321px] ' src="/portfolio/pr5.png" alt="tem" />
-        <img className='w-[319.5px] h-[321px] ' src="/portfolio/pr6.png" alt="tem" />
+        {  portfolios[activePort].map((imgSrc, index) => (
+             <img key={index} className='w-[319.5px] h-[321px] rounded-sm ' src={imgSrc} alt={`Imges ${index + 1} `} />
 
+            ))
+        }
+      
     </div>
 
     <div className="flex justify-center items-center mt-10">
