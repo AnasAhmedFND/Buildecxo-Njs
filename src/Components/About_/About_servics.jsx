@@ -4,8 +4,8 @@ import { IoIosArrowDropright } from "react-icons/io";
 const About_servics = () => {
 
   return (
-   <section className='container mx-auto py-5  flex justify-between'>
-    <div className=" w-[48%] relative h-[600px] ">
+   <section className='container mx-auto py-5  md:flex justify-between md:px-0 px-2 '>
+    <div className=" md:w-[48%] relative md:h-[600px] h-[450px] ">
       <h4 className='font-bold pb-4 text-2xl underline'>About_servics:</h4>
         <img className='w-[80%] ml-[20%]  ' src="/about/as-2.png" alt="" />
         <img className='absolute w-[60%] bottom-16 z-20 ' src="/about/as-3.png" alt="" />
@@ -14,7 +14,7 @@ const About_servics = () => {
 
     </div>
 
-    <div className="w-[48%] ">
+    <div className="md:w-[48%] md:mt-10 ">
       <h2 className='font-bold text-2xl '>What We Do!</h2>
       <p className='mt-4 '>It is a long established fact that a reader will be distracted by the <br /> readable content of a page when looking at its layout</p>
 
