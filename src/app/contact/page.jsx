@@ -1,11 +1,17 @@
+import Contacts from '@/Components/Contact_/Contacts'
+import Hero from '@/Components/hero_/Hero'
 import React from 'react'
+import Link from 'next/link'
 
 const page = () => {
   return (
-    <div>
-         <h2 className='font-bold text-4xl text-yellow-500 py-4'>Contact</h2>
+    <>
+
+    <Hero page_title={"Contact"} page={ <Link href={"/"}>Home </Link>} />
+    <Contacts />
+       
       
-    </div>
+    </>
   )
 }
 

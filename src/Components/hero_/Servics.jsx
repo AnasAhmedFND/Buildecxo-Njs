@@ -2,7 +2,7 @@ import React from 'react'
 
 const Servics = () => {
     return (
-        <section className='container mx-auto py-5  '>
+        <section className='container mx-auto py-5 md:px-0 px-2 '>
             <div className="md:flex md:flex-row felx flex-col  gap-[1%] mt-10">
 
                 <div className=" md:w-[24%] w-full text-center md:border-none border-b  ">
