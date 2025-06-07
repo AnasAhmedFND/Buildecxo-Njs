@@ -1,20 +1,14 @@
 'use client';
 import React from 'react'
 import { FaArrowRight } from "react-icons/fa6";
-import { motion } from "framer-motion";
+
 
 const Great_building = () => {
   return (
     <section id='build_about' className='container mx-auto py-5 md:px-0 px-2 '>
       <p className='text-center text-red-500'>Great Experience in building</p>
 
-      <motion.div
-          initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      viewport={{ once: true }}             
-        
-        className="md:flex justify-between md:mt-10 mt-4 ">
+      <div  className="md:flex justify-between md:mt-10 mt-4 ">
         <div className="md:w-[30%] border border-dashed border-black rounded-b-[50px] py-2 text-center shadow-xl shadow-[#c6adcd] ">
           <img className='mx-auto' src="/about/bl1.png" alt="" />
           <h5 className='font-bold '>Best Repair & <br />painting </h5>
@@ -42,7 +36,7 @@ const Great_building = () => {
 
         </div>
 
-      </motion.div>
+      </div>
 
       <div className="md:mt-[60px] mt-[50px] md:flex md:border text-[12px] mx-auto gap-[22px] justify-center md:w-[42%] items-center pl-2 md:rounded-r-full ">
         <p className='text-red-500'>Offeromg High Quality Construction Solutions</p>
