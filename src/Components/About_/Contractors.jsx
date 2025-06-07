@@ -10,7 +10,7 @@ const Contractors = () => {
 
 
     return (
-        <section className='container mx-auto  md:py-10 py-4 md:flex gap-[2%] md:px-0 px-2 '>
+        <section className='container mx-auto  md:py-10 py-4 md:flex md:justify-between md:px-0 px-2  '>
             <div className=" md:w-[58%]  ">
                 <h2 className='font-bold text-2xl py-4 underline'>Contractors:</h2>
                 <p className='text-red-500 text-[12px] '>About Our Company</p>
@@ -49,7 +49,7 @@ const Contractors = () => {
             </div>
 
 
-            <div className=" md:w-[40%]  relative md:mt-0 mt-5 ">
+            <div className=" md:w-[38%]  relative md:mt-0 mt-5 ">
                 <img className='md:w-[380px] w-[325px] h-[480px]  md:ml-6 ml-2  md:mt-4 mt-4 ' src="/about/before.png" alt="background" />
                 <img className='md:w-[380px] w-[315px]  h-[480px] absolute top-0 md:left-2 ' src="/about/about-1.png" alt="man" />
             </div>
