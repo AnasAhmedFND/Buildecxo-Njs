@@ -3,8 +3,9 @@ import React from 'react'
 const Contacts = () => {
     return (
         <section className='container mx-auto  py-10 px-2 md:px-0 '>
-            <div className=" flex h-[800px] justify-between ">
-                <div className=" w-[48%] relative ">
+            {/* page top items .................................*/}
+            <div className=" md:flex md:h-[800px] justify-between ">
+                <div className=" md:w-[48%] relative ">
                     <p className='text-red-500 text-[10px] '>Great Experience in building</p>
                     <h2 className='font-bold text-4xl '>Frequntly Asked <br /> Any Questions</h2>
 
@@ -13,7 +14,7 @@ const Contacts = () => {
 
                 </div>
 
-                <div className=" w-[48%] ">
+                <div className=" md:w-[48%] ">
                     <p className='text-[14px] flex justify-end '>Aliquam tempus libero eget arcu euismod, in bibendum nisl <br /> posuere. Donec gravida sem eu dolor rhoncus viverra. In vel <br />
                         cursus ante.</p>
                     <h5 className='mt-8 font-bold text-xl flex justify-between'>What is Agency ? <span className='text-red-500 text-xl font-bold '>+</span> </h5>
@@ -34,15 +35,15 @@ const Contacts = () => {
 
             </div>
 
-            <div className=" mt-5 bg-[#F7F7F7] w-[97%] rounded-md h-[522px] md:ml-[3%] p-10">
+            <div className=" mt-5 bg-[#F7F7F7] w-[97%] rounded-md md:h-[522px] md:ml-[3%] md:p-10 p-2">
                 <h2 className='font-bold text-4xl '>Contact Me</h2>
                 <p className='mt-2 text-[14px] '>In nec libero luctus, aliquet turpis at, vehicula nisi. Cras eget mauris in nisl tempus lobortis.</p>
 
                 <div className="mt-5 flex flex-wrap gap-3 ">
-                    <input className='border p-2 w-[48%] rounded-xl outline-none ' type="text" placeholder='Fast Name' />
-                    <input className='border p-2 w-[48%] rounded-xl outline-none ' type="text" placeholder='Last Name' />
-                    <input className='border p-2 w-[48%] rounded-xl outline-none ' type="text" placeholder='Email address' />
-                    <select className='border p-2 w-[48%] rounded-xl outline-none ' name="servics" id=""  >
+                    <input className='border p-2 md:w-[48%] w-full rounded-xl outline-none ' type="text" placeholder='Fast Name' />
+                    <input className='border p-2 md:w-[48%] w-full rounded-xl outline-none ' type="text" placeholder='Last Name' />
+                    <input className='border p-2 md:w-[48%] w-full rounded-xl outline-none ' type="text" placeholder='Email address' />
+                    <select className='border p-2 md:w-[48%] w-full rounded-xl outline-none ' name="servics" id=""  >
                         <option value="some">Select Service Type</option>
                         <option value="Development">Development</option>
                         <option value="web">Website Development</option>
