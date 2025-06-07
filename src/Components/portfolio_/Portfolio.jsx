@@ -55,7 +55,7 @@ const Portfolio = () => {
 
 
   return (
-   <section className='container mx-auto md:py-10 md:px-0 px-2 md:pb-0 pb-4 lg:py-5'>
+   <section className='container mx-auto md:py-10 md:px-0 px-2 md:pb-0 pb-4  '>
     <div className="">
         <div className="md:flex ">
             <div className="md:w-1/2 ">
@@ -92,7 +92,7 @@ const Portfolio = () => {
 
     <div className="mt-8 flex flex-wrap md:col-span-3 col-span-2 md:gap-8 gap-3 ">
         {  portfolios[activePort].map((imgSrc, index) => (
-             <img key={index} className='md:w-[319.5px] lg:w-[404.5px] w-[48%] md:h-[321px] h-[200px] rounded-sm ' src={imgSrc} alt={`Imges ${index + 1} `} />
+             <img key={index} className='md:w-[319.5px] w-[48%] md:h-[321px] h-[200px] rounded-sm ' src={imgSrc} alt={`Imges ${index + 1} `} />
 
             ))
         }

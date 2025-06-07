@@ -11,7 +11,7 @@ const Contractors = () => {
 
     return (
         <section className='container mx-auto  md:py-10 py-4 md:flex md:justify-between md:px-0 px-2  '>
-            <div className=" md:w-[58%]  ">
+            <div className=" md:w-[58%] md:ml-4  ">
                 <h2 className='font-bold text-2xl py-4 underline'>Contractors:</h2>
                 <p className='text-red-500 text-[12px] '>About Our Company</p>
                 <h2 className='font-bold text-2xl '>A team of reliable and </h2>

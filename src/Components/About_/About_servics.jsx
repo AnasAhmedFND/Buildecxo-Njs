@@ -5,7 +5,7 @@ const About_servics = () => {
 
   return (
    <section className='container mx-auto py-5  md:flex justify-between md:px-0 px-2  '>
-    <div className=" md:w-[48%] lg:[50%] relative md:h-[600px] h-[450px]  ">
+    <div className=" md:w-[48%] lg:[50%] relative md:h-[600px] h-[450px] lg:ml-5  ">
       <h4 className='font-bold pb-4 text-2xl underline'>About_servics:</h4>
         <img className='w-[80%] ml-[20%]  ' src="/about/as-2.png" alt="" />
         <img className='absolute w-[60%] bottom-16 z-20 ' src="/about/as-3.png" alt="" />

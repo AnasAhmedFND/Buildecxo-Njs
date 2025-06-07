@@ -41,13 +41,13 @@ const Hedar = () => {
            text-white  z-20  md:mt-8 absolute md:h-auto h-screen md:bg-none bg-[#ff6600] mt-9    ${menu ? "md:static absolute -left-[860px]  " : "top-0 left-0 md:absolute fixed   "} `}>
 
         <div className="bg-[#FF6600] pr-5 rounded-l-full  h-[56px] ">
-          <img className=' w-[250px] lg:w-[235px]  h-[56px] md:rounded-br-4xl lg:pr-0 pr-4 md:rounded-l-full ' src="/Group-m.png" alt="netur" />
+          <img className=' w-[250px] lg:w-[210px]  h-[56px] md:rounded-br-4xl lg:pr-0 pr-4 md:rounded-l-full ' src="/Group-m.png" alt="netur" />
 
 
         </div>
 
-        <div className="md:flex items-center lg:gap-10   bg-[#FF6600] md:gap-8  gap-4 px-2  ">
-          <ul className='md:flex justify-center items-center  font-bold md:gap-7 lg:gap-11 gap-14  py-4  '>
+        <div className="md:flex items-center  bg-[#FF6600] md:gap-8  gap-4 px-2  ">
+          <ul className='md:flex justify-center items-center  font-bold md:gap-7 gap-14  py-4  '>
             <li onClick={hendeleMenu} > <Link href={'/'} >Home </Link> </li>
             <li onClick={hendeleMenu} className='md:mt-0 mt-4'> <Link href={'/abouts'} >About </Link> </li>
             <li onClick={hendeleMenu} className='md:mt-0 mt-4'> <Link href={'/portfolio'} >Portfolio </Link> </li>
@@ -63,7 +63,7 @@ const Hedar = () => {
 
 
         </div>
-        <div className=" bg-[#c15208] py-4 md:w-[197px] px-[26px] md:rounded-r-full  ">
+        <div className=" bg-[#c15208]  py-4 md:w-[197px]  px-[26px] md:rounded-r-full ">
           <p className='flex gap-2 items-center font-bold lg:ml-0 ml-2 '>Get a quote <MdKeyboardDoubleArrowRight /> </p>
 
         </div>

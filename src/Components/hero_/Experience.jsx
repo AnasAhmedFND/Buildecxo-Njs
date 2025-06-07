@@ -6,7 +6,7 @@ import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 const Experience = () => {
     return (
         <section className='container mx-auto pt-16 md:px-0 px-2'>
-            <div className="absolute md:bottom-5 lg:bottom-16 bottom-[130px]  container mx-auto flex justify-center ">
+            <div className="absolute md:bottom-5 bottom-[130px]  container mx-auto flex justify-center ">
                 <img className='md:h-[250px] h-[150px] ' src="/home/Section.png" alt="" />
             </div>
             

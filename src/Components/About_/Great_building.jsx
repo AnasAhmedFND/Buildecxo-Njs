@@ -38,8 +38,8 @@ const Great_building = () => {
 
       </div>
 
-      <div className="md:mt-[60px] mt-[50px] md:flex md:border text-[12px] mx-auto gap-[22px] justify-center md:w-[42%] items-center pl-2 md:rounded-r-full ">
-        <p className='text-red-500'>Offeromg High Quality Construction Solutions</p>
+      <div className="md:mt-[60px] mt-[50px] md:flex  text-[12px] mx-auto gap-[22px] justify-center md:w-[42%] items-center pl-2 md:rounded-r-full ">
+        <p className='text-red-500 '>Offeromg High Quality Construction Solutions</p>
         <button className='border md:w-auto w-full bg-[#ff6600] px-4 text-white py-2  md:rounded-r-full mt-3 md:mt-0 '>Build Your Dream Now </button>
 
       </div>
