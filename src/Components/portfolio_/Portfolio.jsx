@@ -90,9 +90,9 @@ const Portfolio = () => {
 
 
 
-    <div className="mt-8 flex flex-wrap md:col-span-3 col-span-2 md:gap-8 gap-3 ">
+    <div className="mt-8 flex flex-wrap md:col-span-3 col-span-2 md:gap-8 gap-3  ">
         {  portfolios[activePort].map((imgSrc, index) => (
-             <img key={index} className='md:w-[319.5px] w-[48%] md:h-[321px] h-[200px] rounded-sm ' src={imgSrc} alt={`Imges ${index + 1} `} />
+             <img key={index} className='md:w-[319.5px] lg:w-[350px] w-[48%] md:h-[321px] h-[200px] rounded-sm ' src={imgSrc} alt={`Imges ${index + 1} `} />
 
             ))
         }
