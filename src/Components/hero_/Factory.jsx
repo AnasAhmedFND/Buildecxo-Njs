@@ -1,11 +1,15 @@
+"use client"
 import React from 'react'
 import { MdLocationPin } from "react-icons/md";
 
 
+
 const Factory = () => {
     return (
-        <section id="factory" className='container mx-auto md:px-0 px-2 relative py-10 md:pb-56 pb-10 '>
-            
+        <section id="factory" className='container mx-auto md:px-0 px-2 relative py-10 md:pb-56 pb-10  '
+
+        >
+
             <img className='w-full h-[450px] ' src="/home/main-build.jpg" alt="" />
             <div className="md:flex md:w-[90%] w-full  justify-between md:ml-[5%] md:absolute md:bottom-40 ">
 

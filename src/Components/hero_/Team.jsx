@@ -1,36 +1,72 @@
-import React from 'react'
+"use client";
 
-const Team = () => {
+
+import {motion} from 'framer-motion'
+
+const Team = () => {  
+
     return (
-        <section className='container mx-auto py-2 md:px-0 px-2 '>
+        <section className='container mx-auto py-2 md:px-0 px-2  '>
             <h3 className='font-bold text-2xl md:block border-b-2 pb-2 '>Team</h3>
+            
+
+            {/* {team items}...................... */}
             <div className=" md:flex justify-between md:py-5 ">
-            <div className="md:w-[30%] w-full   ">
+
+                {/* Left */}
+
+            <motion.div className=" md:w-[30%] w-full   "
+
+                initial={{ x: -50, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    viewport={{ once: false, amount: 0.5 }}
+                    transition={{ type: "spring", stiffness: 50 }}  
+
+            >
                 <img className='h-[350px] w-full bg-white shadow-[#533853] shadow-xl ' src="/home/tm1.png" alt="team" />
                 <div className="pl-2 py-2 bg-[#F9F4F4]">
                     <h5 className='font-bold'>Marc Chiasson</h5>
                     <p>Marc Chiasson</p>
 
                 </div>
-            </div>
+            </motion.div>
 
-             <div className="md:w-[30%] w-full md:mt-0 mt-2 ">
+            {/* Medil */}
+
+             <motion.div className="md:w-[30%] w-full md:mt-0 mt-2 "
+
+                 initial={{ y: 50,scale:0.5, opacity: 0 }}
+                    whileInView={{ y: 0,scale:1,  opacity: 1 }}
+                    viewport={{ once: false, amount: 0.5 }}
+                    transition={{ type: "spring", stiffness: 50 }}  
+
+             >
                 <img className='h-[350px] w-full bg-white shadow-[#533853] shadow-xl ' src="/home/tm2.png" alt="team" />
                 <div className="pl-2 py-2 bg-[#F9F4F4]">
                     <h5 className='font-bold'>Marc Chiasson</h5>
                     <p>Marc Chiasson</p>
 
                 </div>
-            </div> 
+            </motion.div> 
 
-            <div className="md:w-[30%] w-full md:mt-0 mt-2 ">
+            {/* Right */}
+
+            <motion.div className="md:w-[30%] w-full md:mt-0 mt-2 "
+
+               initial={{ x: 50, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    viewport={{ once: false, amount: 0.5 }}
+                    transition={{ type: "spring", stiffness: 50 }}  
+
+
+            >
                 <img className='h-[350px] w-full bg-white shadow-[#533853] shadow-xl ' src="/home/tm3.png" alt="team" />
                 <div className="pl-2 py-2 bg-[#F9F4F4] ">
                     <h5 className='font-bold'>Marc Chiasson</h5>
                     <p>Marc Chiasson</p>
 
                 </div>
-            </div>
+            </motion.div>
 
 
             </div>
