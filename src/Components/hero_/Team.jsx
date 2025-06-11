@@ -17,8 +17,8 @@ const Team = () => {
 
             <motion.div className=" md:w-[30%] w-full   "
 
-                initial={{ x: -50, opacity: 0 }}
-                    whileInView={{ x: 0, opacity: 1 }}
+                initial={{ y:150, scale:0.5, opacity: 0 }}
+                    whileInView={{ y: 0, scale:1 , opacity: 1 }}
                     viewport={{ once: false, amount: 0.5 }}
                     transition={{ type: "spring", stiffness: 50 }}  
 
@@ -53,8 +53,8 @@ const Team = () => {
 
             <motion.div className="md:w-[30%] w-full md:mt-0 mt-2 "
 
-               initial={{ x: 50, opacity: 0 }}
-                    whileInView={{ x: 0, opacity: 1 }}
+               initial={{ y: 150, scale:0.5, opacity: 0 }}
+                    whileInView={{ y: 0, scale:1 , opacity: 1 }}
                     viewport={{ once: false, amount: 0.5 }}
                     transition={{ type: "spring", stiffness: 50 }}  
 

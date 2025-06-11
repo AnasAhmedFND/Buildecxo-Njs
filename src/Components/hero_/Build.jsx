@@ -26,9 +26,9 @@ const Build = () => {
                     transition={{ type: "spring", stiffness: 50 }}
 
                 >
-                    <img key={index} className='md:w-[210px] lg:w-[250px] w-full h-[180px] rounded-md' src={item.img} alt={item.text} />
+                    <img className='md:w-[210px] lg:w-[250px] w-full h-[180px] rounded-md' src={item.img} alt={item.text} />
 
-                    <p className='font-bold mt-2'>{item.index} </p>
+                    <p className='font-bold mt-2'>{item.text} </p>
                 </motion.div>
             ))}
            
