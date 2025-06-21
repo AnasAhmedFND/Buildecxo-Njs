@@ -1,12 +1,12 @@
 'use client';
 import React, { useState } from 'react'
-
+import { motion } from 'framer-motion';
 
 const Contractors = () => {
 
     const [mission, setMission] = useState('An IT firm or MSP who keeps your IT running smoothly at all times is like a plumber who fixes your pipes; that’s what they are supposed to do. Many IT firms struggle to keep themselves and their IT from falling apart. We’ve raised');
 
-   
+
 
 
     return (
@@ -23,19 +23,19 @@ const Contractors = () => {
 
                 <div className="mt-5 ">
                     <div className="flex md:gap-5 mt-2 bg-linear-60 from-yellow-500 to-red-500 py-2 px-2 shadow-2xl ">
-                        <p onClick={() =>  setMission("Our Mission** An IT firm or MSP who keeps your IT running smoothly at all times is like a plumber who fixes your pipes; that’s what they are supposed to do. Many IT firms struggle to keep themselves and their IT from falling apart. We’ve raised") }
+                        <p onClick={() => setMission("Our Mission** An IT firm or MSP who keeps your IT running smoothly at all times is like a plumber who fixes your pipes; that’s what they are supposed to do. Many IT firms struggle to keep themselves and their IT from falling apart. We’ve raised")}
 
-                         className='border ml w-[30%]  bg-amber-500 rounded-xl py-2 pl-2  cursor-pointer text-white bg-linear-60 from-[#f5f] to-red-500  '>Our Mission </p>
-                        <p  onClick={() =>  setMission("Our vision ** lorem-20 ") } className='border ml-2 w-[30%] bg-amber-500 rounded-xl py-2 pl-2 text-white bg-linear-60 from-[#f5f] to-red-500 hover:bg-[#f5f] cursor-pointer  '>Our Vision </p>
+                            className='border ml w-[30%]  bg-amber-500 rounded-xl py-2 pl-2  cursor-pointer text-white bg-linear-60 from-[#f5f] to-red-500  '>Our Mission </p>
+                        <p onClick={() => setMission("Our vision ** lorem-20 ")} className='border ml-2 w-[30%] bg-amber-500 rounded-xl py-2 pl-2 text-white bg-linear-60 from-[#f5f] to-red-500 hover:bg-[#f5f] cursor-pointer  '>Our Vision </p>
 
-                        <p  onClick={() =>  setMission(" OUr Value ** lorem-15 ") } className='border ml-2 w-[30%] bg-amber-500 rounded-xl py-2 pl-2 text-white bg-linear-60 from-[#f5f] to-red-500 hover:bg-[#f5f] cursor-pointer  '>Our Value </p>
+                        <p onClick={() => setMission(" OUr Value ** lorem-15 ")} className='border ml-2 w-[30%] bg-amber-500 rounded-xl py-2 pl-2 text-white bg-linear-60 from-[#f5f] to-red-500 hover:bg-[#f5f] cursor-pointer  '>Our Value </p>
                     </div>
 
                     <div className="">
-                    <p className=' overflow-scroll border-t text-[14px] mt-4 px-2 py-2' > {mission} </p>
+                        <p className=' overflow-scroll border-t text-[14px] mt-4 px-2 py-2' > {mission} </p>
 
-                        </div>                    
-                    
+                    </div>
+
 
                 </div>
 
@@ -49,10 +49,15 @@ const Contractors = () => {
             </div>
 
 
-            <div className=" md:w-[38%]  relative md:mt-0 mt-5 ">
+            <motion.div className=" md:w-[38%]  relative md:mt-0 mt-5 "
+                whileInView={{ rotate: 360 }}
+                transition={{ duration: 1 }}
+                viewport={{ once:  false, amount: 0.5 }}
+
+            >
                 <img className='md:w-[380px] w-[325px] h-[480px]  md:ml-6 ml-2  md:mt-4 mt-4 ' src="/about/before.png" alt="background" />
                 <img className='md:w-[380px] w-[315px]  h-[480px] absolute top-0 md:left-2 ' src="/about/about-1.png" alt="man" />
-            </div>
+            </motion.div>
 
 
         </section>
